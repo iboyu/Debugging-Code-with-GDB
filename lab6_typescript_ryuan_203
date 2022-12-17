@@ -1,0 +1,409 @@
+Script started on 2022-03-20 22:05:03-04:00
+bash-4.4$ uname -a
+Linux zeus-1.vse.gmu.edu 4.18.0-348.7.1.el8_5.x86_64 #1 SMP Wed Dec 8 21:51:17 EST 2021 x86_64 x86_64 x86_64 GNU/Linux
+bash-4.4$ gcc lab6.x[Kc -o lab6
+bash-4.4$ ls -l lab6
+-rwx------. 1 ryuan itestudent 17928 Mar 20 22:05 lab6
+bash-4.4$ ls -l lab6[8@gcc lab6.c -o[C[C[C[C[C -g
+bash-4.4$ gcc lab6.c -o lab6 -g[C[C[C[C[C[C[C[C[C[C[11Pls -l lab6
+-rwx------. 1 ryuan itestudent 20968 Mar 20 22:05 lab6
+bash-4.4$ gdb
+GNU gdb (GDB) Red Hat Enterprise Linux 8.2-16.el8
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) help
+List of classes of commands:
+
+aliases -- Aliases of other commands
+breakpoints -- Making program stop at certain points
+data -- Examining data
+files -- Specifying and examining files
+internals -- Maintenance commands
+obscure -- Obscure features
+running -- Running the program
+stack -- Examining the stack
+status -- Status inquiries
+support -- Support facilities
+tracepoints -- Tracing of program execution without stopping the program
+user-defined -- User-defined commands
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) help breakpoints
+Making program stop at certain points.
+
+List of commands:
+
+awatch -- Set a watchpoint for an expression
+break -- Set breakpoint at specified location
+break-range -- Set a breakpoint for an address range
+catch -- Set catchpoints to catch events
+catch assert -- Catch failed Ada assertions
+catch catch -- Catch an exception
+catch exception -- Catch Ada exceptions
+catch exec -- Catch calls to exec
+catch fork -- Catch calls to fork
+catch handlers -- Catch Ada exceptions
+catch load -- Catch loads of shared libraries
+catch rethrow -- Catch an exception
+catch signal -- Catch signals by their names and/or numbers
+catch syscall -- Catch system calls by their names
+catch throw -- Catch an exception
+catch unload -- Catch unloads of shared libraries
+catch vfork -- Catch calls to vfork
+clear -- Clear breakpoint at specified location
+commands -- Set commands to be executed when the given breakpoints are hit
+condition -- Specify breakpoint number N to break only if COND is true
+delete -- Delete some breakpoints or auto-display expressions
+delete bookmark -- Delete a bookmark from the bookmark list
+delete breakpoints -- Delete some breakpoints or auto-display expressions
+delete checkpoint -- Delete a checkpoint (experimental)
+delete display -- Cancel some expressions to be displayed when program stops
+delete mem -- Delete memory region
+delete tracepoints -- Delete specified tracepoints
+delete tvariable -- Delete one or more trace state variables
+disable -- Disable some breakpoints
+disable breakpoints -- Disable some breakpoints
+disable display -- Disable some expressions to be displayed when program stops
+disable frame-filter -- GDB command to disable the specified frame-filter
+disable mem -- Disable memory region
+disable pretty-printer -- GDB command to disable the specified pretty-printer
+disable probes -- Disable probes
+disable type-printer -- GDB command to disable the specified type-printer
+disable unwinder -- GDB command to disable the specified unwinder
+disable xmethod -- GDB command to disable a specified (group of) xmethod(s)
+dprintf -- Set a dynamic printf at specified location
+--Type <RET> for more, q to quit, c to continue without paging--help break
+enable -- Enable some breakpoints
+enable breakpoints -- Enable some breakpoints
+enable breakpoints count -- Enable breakpoints for COUNT hits
+enable breakpoints delete -- Enable breakpoints and delete when hit
+enable breakpoints once -- Enable breakpoints for one hit
+enable count -- Enable breakpoints for COUNT hits
+enable delete -- Enable breakpoints and delete when hit
+enable display -- Enable some expressions to be displayed when program stops
+enable frame-filter -- GDB command to disable the specified frame-filter
+enable mem -- Enable memory region
+enable once -- Enable breakpoints for one hit
+enable pretty-printer -- GDB command to enable the specified pretty-printer
+enable probes -- Enable probes
+enable type-printer -- GDB command to enable the specified type printer
+enable unwinder -- GDB command to enable unwinders
+enable xmethod -- GDB command to enable a specified (group of) xmethod(s)
+ftrace -- Set a fast tracepoint at specified location
+hbreak -- Set a hardware assisted breakpoint
+ignore -- Set ignore-count of breakpoint number N to COUNT
+rbreak -- Set a breakpoint for all functions matching REGEXP
+rwatch -- Set a read watchpoint for an expression
+save -- Save breakpoint definitions as a script
+save breakpoints -- Save current breakpoint definitions as a script
+save gdb-index -- Save a gdb-index file
+save tracepoints -- Save current tracepoint definitions as a script
+skip -- Ignore a function while stepping
+skip delete -- Delete skip entries
+skip disable -- Disable skip entries
+skip enable -- Enable skip entries
+skip file -- Ignore a file while stepping
+skip function -- Ignore a function while stepping
+strace -- Set a static tracepoint at location or marker
+tbreak -- Set a temporary breakpoint
+tcatch -- Set temporary catchpoints to catch events
+tcatch assert -- Catch failed Ada assertions
+tcatch catch -- Catch an exception
+tcatch exception -- Catch Ada exceptions
+tcatch exec -- Catch calls to exec
+tcatch fork -- Catch calls to fork
+tcatch handlers -- Catch Ada exceptions
+tcatch load -- Catch loads of shared libraries
+tcatch rethrow -- Catch an exception
+tcatch signal -- Catch signals by their names and/or numbers
+--Type <RET> for more, q to quit, c to continue without paging--quit
+Quit
+(gdb) q
+bash-4.4$ gdb lab6
+GNU gdb (GDB) Red Hat Enterprise Linux 8.2-16.el8
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from lab6...done.
+(gdb) file lab6
+Load new symbol table from "lab6"? (y or n) y
+Reading symbols from lab6...done.
+(gdb) run
+Starting program: /home/ryuan/CS262/lab6/lab6_ryuan_203/lab6 
+Usage: /home/ryuan/CS262/lab6/lab6_ryuan_203/lab6 [1 2]
+           1 = Mode 1
+           2 = Mode 2
+[Inferior 1 (process 1172607) exited normally]
+(gdb) [K(gdb) [K(gdb) run 1
+Starting program: /home/ryuan/CS262/lab6/lab6_ryuan_203/lab6 1
+Here we are in DebugOption1()
+The sum of integers from 0 to 10 is: 1013
+[Inferior 1 (process 1179182) exited normally]
+(gdb) break Du[KebugOption1
+Breakpoint 1 at 0x40081b: file lab6.c, line 55.
+(gdb) run 1
+Starting program: /home/ryuan/CS262/lab6/lab6_ryuan_203/lab6 1
+
+Breakpoint 1, DebugOption1 () at lab6.c:55
+55	    int sum = 0;
+(gdb) where
+#0  DebugOption1 () at lab6.c:55
+#1  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+(gdb) up
+#1  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+32		DebugOption1();
+(gdb) up
+Initial frame selected; you cannot go up.
+(gdb) print option
+$1 = 1
+(gdb) down
+#0  DebugOption1 () at lab6.c:55
+55	    int sum = 0;
+(gdb) step 5
+37	  _IO_acquire_lock (fp);
+(gdb) print sum
+No symbol "sum" in current context.
+(gdb) up[K[Kwhere
+#0  __GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at iofwrite.c:37
+#1  0x0000000000400840 in DebugOption1 () at lab6.c:58
+#2  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+(gdb)  [Kup[K[Kup
+#1  0x0000000000400840 in DebugOption1 () at lab6.c:58
+58	    fprintf(stdout, "Here we are in DebugOption1()\n");
+(gdb) print sum
+$2 = 0
+(gdb) step
+38	  if (_IO_vtable_offset (fp) != 0 || _IO_fwide (fp, -1) == -1)
+(gdb) where
+#0  __GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at iofwrite.c:38
+#1  0x0000000000400840 in DebugOption1 () at lab6.c:58
+#2  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+(gdb) s[Kstep
+39	    written = _IO_sputn (fp, (const char *) buf, request);
+(gdb) print sum
+No symbol "sum" in current context.
+(gdb) where
+#0  __GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at iofwrite.c:39
+#1  0x0000000000400840 in DebugOption1 () at lab6.c:58
+#2  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+(gdb) 
+#0  __GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at iofwrite.c:39
+#1  0x0000000000400840 in DebugOption1 () at lab6.c:58
+#2  0x000000000040077c in main (argc=2, argv=0x7fffffffd718) at lab6.c:32
+(gdb) where[Kstep
+IO_validate_vtable (vtable=0x7ffff7dc73c0 <__GI__IO_file_jumps>) at libioP.h:834
+834	  if (__glibc_unlikely (offset >= section_length))
+(gdb) step
+__GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at libioP.h:838
+838	  return vtable;
+(gdb) stepwhereprint sum
+No symbol "sum" in current context.
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+_IO_new_file_xsputn (f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>, data=0x4009b8, n=30) at fileops.c:1202
+1202	{
+(gdb) step
+1208	  if (n <= 0)
+(gdb) stepprint sum
+No symbol "sum" in current context.
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+1201	_IO_new_file_xsputn (FILE *f, const void *data, size_t n)
+(gdb) stepprint sum
+No symbol "sum" in current context.
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+_IO_new_file_xsputn (n=30, data=0x4009b8, f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at fileops.c:1215
+1215	  if ((f->_flags & _IO_LINE_BUF) && (f->_flags & _IO_CURRENTLY_PUTTING))
+(gdb) step
+1232	  else if (f->_IO_write_end > f->_IO_write_ptr)
+(gdb) step
+1248	      if (_IO_OVERFLOW (f, EOF) == EOF)
+(gdb) step
+IO_validate_vtable (vtable=0x7ffff7dc73c0 <__GI__IO_file_jumps>) at libioP.h:834
+834	  if (__glibc_unlikely (offset >= section_length))
+(gdb) step
+_IO_new_file_xsputn (n=30, data=<optimized out>, f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at libioP.h:838
+838	  return vtable;
+(gdb) step
+
+_IO_new_file_overflow (f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>, ch=-1) at fileops.c:736
+736	{
+(gdb) 
+737	  if (f->_flags & _IO_NO_WRITES) /* SET ERROR */
+(gdb) step
+744	  if ((f->_flags & _IO_CURRENTLY_PUTTING) == 0 || f->_IO_write_base == NULL)
+(gdb) step
+747	      if (f->_IO_write_base == NULL)
+(gdb) step
+749		  _IO_doallocbuf (f);
+(gdb) step
+__GI__IO_doallocbuf (fp=fp@entry=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at genops.c:343
+343	{
+(gdb) stepprint sum
+No symbol "sum" in current context.
+(gdb) nxe[K[Kext
+344	  if (fp->_IO_buf_base)
+(gdb) next
+346	  if (!(fp->_flags & _IO_UNBUFFERED) || fp->_mode > 0)
+(gdb) next
+347	    if (_IO_DOALLOCATE (fp) != EOF)
+(gdb) next
+838	  return vtable;
+(gdb) next
+_IO_new_file_overflow (f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>, ch=-1) at fileops.c:750
+750		  _IO_setg (f, f->_IO_buf_base, f->_IO_buf_base, f->_IO_buf_base);
+(gdb) next
+759	      if (__glibc_unlikely (_IO_in_backup (f)))
+(gdb) next
+768	      if (f->_IO_read_ptr == f->_IO_buf_end)
+(gdb) nextprint sum[C[C[C[C[C[C[5Pstepprint sum
+No symbol "sum" in current context.
+(gdb) print sum[C[C[C[C[C[C[5Pnext
+770	      f->_IO_write_ptr = f->_IO_read_ptr;
+(gdb) next
+771	      f->_IO_write_base = f->_IO_write_ptr;
+(gdb) next
+775	      f->_flags |= _IO_CURRENTLY_PUTTING;
+(gdb) next
+776	      if (f->_mode <= 0 && f->_flags & (_IO_LINE_BUF | _IO_UNBUFFERED))
+(gdb) next
+777		f->_IO_write_end = f->_IO_write_ptr;
+(gdb) next
+779	  if (ch == EOF)
+(gdb) next
+780	    return _IO_do_write (f, f->_IO_write_base,
+(gdb) next
+_IO_new_do_write (fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>, data=0x6022a0 "", to_do=0) at fileops.c:428
+428	{
+(gdb) next
+429	  return (to_do == 0
+(gdb) next
+_IO_new_file_xsputn (n=30, data=<optimized out>, f=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at fileops.c:1254
+1254	      block_size = f->_IO_buf_end - f->_IO_buf_base;
+(gdb) next
+1255	      do_write = to_do - (block_size >= 128 ? to_do % block_size : 0);
+(gdb) next
+1257	      if (do_write)
+(gdb) next
+1268	      if (to_do)
+(gdb) next
+1269		to_do -= _IO_default_xsputn (f, s+do_write, to_do);
+(gdb) next
+Here we are in DebugOption1()
+__GI__IO_fwrite (buf=0x4009b8, size=1, count=30, fp=0x7ffff7dcb6e0 <_IO_2_1_stdout_>) at iofwrite.c:37
+37	  _IO_acquire_lock (fp);
+(gdb) next
+45	  if (written == request || written == EOF)
+(gdb) next
+DebugOption1 () at lab6.c:61
+61	    for (i = 0; i < SIZE; i++)
+(gdb) next[K[K[K[Kstep
+63		sum += sum + i;
+(gdb) step[K[K[K[Kprint sum
+$3 = 0
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+61	    for (i = 0; i < SIZE; i++)
+(gdb) stepprint sum
+$4 = 0
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+63		sum += sum + i;
+(gdb) stepprint sum
+$5 = 0
+(gdb) print sum[C[C[C[C[C[C[5Pstep
+61	    for (i = 0; i < SIZE; i++)
+(gdb) step
+63		sum += sum + i;
+(gdb) step
+61	    for (i = 0; i < SIZE; i++)
+(gdb) stepprint sum
+$6 = 4
+(gdb) b 63
+Breakpoint 2 at 0x400849: file lab6.c, line 63.
+(gdb) display sum
+1: sum = 4
+(gdb) com[Kntinue
+Continuing.
+
+Breakpoint 2, DebugOption1 () at lab6.c:63
+63		sum += sum + i;
+1: sum = 4
+(gdb) continue
+Continuing.
+
+Breakpoint 2, DebugOption1 () at lab6.c:63
+63		sum += sum + i;
+1: sum = 11
+(gdb) continue
+Continuing.
+
+Breakpoint 2, DebugOption1 () at lab6.c:63
+63		sum += sum + i;
+1: sum = 26
+(gdb) continue
+Continuing.
+
+Breakpoint 2, DebugOption1 () at lab6.c:63
+63		sum += sum + i;
+1: sum = 57
+(gdb) continue[K[K[K[K[K[K[K[Kprint i
+$7 = 6
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 1192738] will be killed.
+
+Quit anyway? (y or n) y
+bash-4.4$ gdb lab6[K[K[K[Kgcc lab6.c -o ;ab6 -g[1P[1@l[C[C[C[C[C[C
+bash-4.4$ gdb lab6
+GNU gdb (GDB) Red Hat Enterprise Linux 8.2-16.el8
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from lab6...done.
+(gdb) run 1
+Starting program: /home/ryuan/CS262/lab6/lab6_ryuan_203/lab6 1
+Here we are in DebugOption1()
+The sum of integers from 0 to 10 is: 45
+[Inferior 1 (process 1260326) exited normally]
+(gdb) if[Knfo breakpoints
+No breakpoints or watchpoints.
+(gdb) q
+bash-4.4$ exit
+
+Script done on 2022-03-20 22:50:06-04:00
